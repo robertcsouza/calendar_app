@@ -1,8 +1,7 @@
-import 'package:calendar_app/Agendamento.dart';
-import 'package:calendar_app/fancy_fab.dart';
-
+import 'package:calendar_app/SplashScreen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
 
 
 void main() => runApp(MyApp());
@@ -16,45 +15,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomePage(),
+      home: Splash(),
     );
   }
 }
 
-class HomePage extends StatefulWidget {
-  @override
-  _HomePageState createState() => _HomePageState();
-}
 
-class _HomePageState extends State<HomePage> {
-
-
-
-  @override
-  Widget build(BuildContext context) {
-  return Scaffold(
-    appBar: AppBar(
-      title: Text("Main"),
-    ),
-    body: Container(
-      child: Center(
-        child: GestureDetector(
-          onTap:(){
-
-          },
-          child: Text("No momento você nao Possui Agendamentos", style:
-          TextStyle(
-            fontSize: 24,
-            color: Colors.grey,
-          ),),
-        )
-      ),
-    ),
-    floatingActionButton:FancyFab() ,
-
-  );
-  }
-  }
 
 
 
