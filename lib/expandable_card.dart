@@ -90,8 +90,8 @@ class _ExpandableCardState extends State<ExpandableCard>
         (details.primaryVelocity < -500 || _scrollPercent > 0.6)) {
       _animationScrollPercent =
           Tween<double>(begin: _scrollPercent, end: 1.0).animate(
-            CurvedAnimation(parent: _animationController, curve: _bounceOutCurve),
-          );
+        CurvedAnimation(parent: _animationController, curve: _bounceOutCurve),
+      );
       _animationController.forward();
       setState(() {
         _scrollPercent = 1.0;
@@ -101,8 +101,8 @@ class _ExpandableCardState extends State<ExpandableCard>
         (details.primaryVelocity > 200 || _scrollPercent < 0.6)) {
       _animationScrollPercent =
           Tween<double>(begin: _scrollPercent, end: 0.0).animate(
-            CurvedAnimation(parent: _animationController, curve: _bounceOutCurve),
-          );
+        CurvedAnimation(parent: _animationController, curve: _bounceOutCurve),
+      );
       _animationController.forward();
       setState(() {
         _scrollPercent = 0.0;
@@ -114,15 +114,15 @@ class _ExpandableCardState extends State<ExpandableCard>
       if (_cardIsExpanded) {
         _animationScrollPercent =
             Tween<double>(begin: _scrollPercent, end: 1.0).animate(
-              CurvedAnimation(parent: _animationController, curve: _bounceOutCurve),
-            );
+          CurvedAnimation(parent: _animationController, curve: _bounceOutCurve),
+        );
         _animationController.forward();
         setState(() => _scrollPercent = 1.0);
       } else {
         _animationScrollPercent =
             Tween<double>(begin: _scrollPercent, end: 0.0).animate(
-              CurvedAnimation(parent: _animationController, curve: _bounceOutCurve),
-            );
+          CurvedAnimation(parent: _animationController, curve: _bounceOutCurve),
+        );
         _animationController.forward();
         setState(() => _scrollPercent = 0.0);
       }
@@ -141,7 +141,7 @@ class _ExpandableCardState extends State<ExpandableCard>
       animation: _animationController,
       builder: (context, child) {
         double factor =
-        _isAnimating ? _animationScrollPercent.value : _scrollPercent;
+            _isAnimating ? _animationScrollPercent.value : _scrollPercent;
         double top = MediaQuery.of(context).size.height -
             widget.minHeight -
             (widget.maxHeight - widget.minHeight) * factor;
@@ -158,9 +158,9 @@ class _ExpandableCardState extends State<ExpandableCard>
                 color: widget.backgroundColor,
                 borderRadius: widget.hasRoundedCorners
                     ? BorderRadius.only(
-                  topLeft: Radius.circular(50.0),
-                  topRight: Radius.circular(50.0),
-                )
+                        topLeft: Radius.circular(50.0),
+                        topRight: Radius.circular(50.0),
+                      )
                     : null,
                 boxShadow: [
                   if (widget.hasShadow)
@@ -195,8 +195,6 @@ class _ExpandableCardState extends State<ExpandableCard>
     super.dispose();
   }
 }
-
-
 
 class ExpandableCardPage extends StatelessWidget {
   /// Page that supports a `ExpandableCard`. Usually used as a scaffold's body.

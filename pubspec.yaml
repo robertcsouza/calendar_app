@@ -27,6 +27,9 @@ dependencies:
   expandable_card: ^0.0.3+1
   animated_floatactionbuttons: ^0.1.0
   flutter_fab_dialer: ^0.1.1
+  flutter_custom_clippers: ^1.1.0
+  gradient_app_bar: ^0.1.3
+  getflutter: ^1.0.9
 
 
 dev_dependencies:
