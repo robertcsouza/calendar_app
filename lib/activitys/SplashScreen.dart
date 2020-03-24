@@ -1,4 +1,4 @@
-import 'package:calendar_app/home.dart';
+import 'package:calendar_app/activitys/home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -18,6 +18,10 @@ class _SplashState extends State<Splash> {
       Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>HomePage()));
     });
   }
+
+
+
+
 
   @override
   Widget build(BuildContext context) {

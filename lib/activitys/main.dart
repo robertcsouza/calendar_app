@@ -1,4 +1,4 @@
-import 'package:calendar_app/SplashScreen.dart';
+import 'package:calendar_app/activitys/SplashScreen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
